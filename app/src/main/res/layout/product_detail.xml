@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="none"
+    android:layout_height="match_parent">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="250dp">
+
+          <ImageView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/delete_avocado"
+              android:scaleType="center"/>
+
+      </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_light"
+                android:text="Avocado special Imported"
+                android:textColor="#352F2F"
+                android:maxLines="1"
+                android:textSize="18sp"
+
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/RatingBar_Id"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="4" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="2KG"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#352F2F"
+
+                android:textSize="12.5sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat"
+                    android:text="MRP:40"
+                    android:textColor="#352F2F" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat"
+                    android:text="₹30"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimary" />
+
+
+
+            </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ddd"
+                    android:layout_marginTop="@dimen/margin_10"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textSize="15sp"
+                android:text="The avocado, a tree with probable origin in South Central Mexico, is classified as a member of the flowering plant family Lauraceae. The fruit of the plant, also called an avocado, is botanically a large berry containing a single large seed. "/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/margin_10"
+        android:id="@+id/bottom_layout"
+
+        android:background="#85F0F0F0">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/quantity_selector"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:id="@+id/minus_btn"
+                android:background="@drawable/ic_remove_circle_outline_black_24dp"
+                android:textColor="#fff"
+                android:text="-" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="5"
+                android:textStyle="bold"
+                android:textColor="#352F2F"
+                android:gravity="center"
+                android:textSize="19sp"
+                android:fontFamily="@font/open_sans_light"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_10"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="16.3dp"
+                android:id="@+id/plus_btn"
+                card_view:srcCompat="@drawable/ic_add_circle_outline_black_24dp"/>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/quantity_selector">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/round_button"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="@dimen/margin_10"
+                android:layout_centerVertical="true"
+                android:text="Add to cart"
+                android:textColor="#fff" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

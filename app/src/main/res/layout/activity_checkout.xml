@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    tools:context=".checkout">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_5"
+
+            android:orientation="vertical">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_margin="@dimen/margin_5"
+                        android:padding="@dimen/margin_5"
+
+                        android:text="@string/delivery_address"
+                        android:textColor="@color/design_default_color_on_secondary"
+                        android:textSize="15sp" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.10dp"
+                        android:background="@color/gray_btn_bg_color" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:fontFamily="@font/maven_pro"
+                        android:maxLines="3"
+                        android:padding="@dimen/margin_5"
+                        android:id="@+id/address"
+
+                        android:layout_margin="@dimen/margin_5"
+
+                        android:textColor="@color/design_default_color_on_secondary"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/payment_type"
+                        android:padding="@dimen/margin_5"
+
+                        android:layout_margin="@dimen/margin_5"
+                        android:textColor="@color/design_default_color_on_secondary"
+                        android:textSize="15sp" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.10dp"
+                        android:background="@color/gray_btn_bg_color" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:fontFamily="@font/maven_pro"
+                        android:maxLines="3"
+                        android:layout_margin="@dimen/margin_5"
+                        android:padding="@dimen/margin_5"
+
+                        android:text="Cash on delivery"
+                        android:textColor="@color/design_default_color_on_secondary"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Total amount"
+                        android:layout_margin="@dimen/margin_5"
+                        android:padding="@dimen/margin_5"
+
+                        android:textColor="@color/design_default_color_on_secondary"
+                        android:textSize="15sp" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.10dp"
+                        android:background="@color/gray_btn_bg_color" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:text="2500/-"
+                        android:layout_margin="@dimen/margin_5"
+                        android:padding="@dimen/margin_5"
+
+                        android:textColor="@color/design_default_color_on_secondary"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/select_delivery_date"
+                        android:layout_margin="@dimen/margin_5"
+                        android:padding="@dimen/margin_5"
+
+                        android:textColor="@color/design_default_color_on_secondary"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.10dp"
+                        android:background="@color/gray_btn_bg_color" />
+
+
+                    <com.vivekkaushik.datepicker.DatePickerTimeline
+                        android:id="@+id/datePickerTimeline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:padding="@dimen/margin_5"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:text="@string/bill_details"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="50"
+                            android:layout_height="wrap_content"
+                            android:text="@string/item_total"/>
+
+                        <TextView
+                            android:id="@+id/item_total"
+                            android:layout_width="0dp"
+                            android:layout_weight="50"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@color/gray_light"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="50"
+                            android:layout_height="wrap_content"
+                            android:text="@string/offer"/>
+
+                        <TextView
+                            android:id="@+id/item_offer"
+                            android:layout_width="0dp"
+                            android:layout_weight="50"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@color/gray_light"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="50"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="@string/total_discount"/>
+
+                        <TextView
+                            android:id="@+id/item_discount"
+                            android:layout_width="0dp"
+                            android:layout_weight="50"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:gravity="right"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@color/gray_light"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="50"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/to_pay"/>
+
+                        <TextView
+                            android:id="@+id/item_topay"
+                            android:layout_width="0dp"
+                            android:layout_weight="50"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:gravity="right"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/proceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="-5dp"
+            android:layout_marginBottom="-5dp"
+            android:background="#388E3C"
+            android:text="@string/poceed"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
